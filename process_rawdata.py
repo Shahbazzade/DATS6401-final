@@ -7,6 +7,11 @@ Created on Mon Nov 19 20:06:02 2018
 """
 
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+
 ### Provide the path here
 os.chdir('/Users/jimgrund/Documents/GWU/DATS6401-DataViz/final/') 
 colspecs=[[8,12], [12,14], [74,76], [76,78], [78,79], [107,109], [119,120], [123,124], [162,163], [223,225],
@@ -26,7 +31,7 @@ colspecs=[[8,12], [12,14], [74,76], [76,78], [78,79], [107,109], [119,120], [123
 colnames=['birth_year', 'birth_month', 'mother_age', 'mother_age_recode14', 'mother_age_recode9', 'mother_race_recode15', 'marital_status', 'mother_education','father_education','month_prenatal_began',
           'month_prenatal_began_recode', 'num_prenatal_visits', 'num_prenatal_visits_recode', 'wic',
           'cigs_before_pregnancy', 'cigs_first_trimester', 'cigs_second_trimester', 'cigs_third_trimester',
-          'cigs_before_pregnancy_recode', 'cigs_first_trimester_recode', 'cigs_second_trimester_recode', 'cigs_third_trimester_recode'
+          'cigs_before_pregnancy_recode', 'cigs_first_trimester_recode', 'cigs_second_trimester_recode', 'cigs_third_trimester_recode',
           'mother_bmi', 'mother_bmi_recode', 'weight_gain', 'weight_gain_recode',
           'prepreg_diabetes','gestational_diabetes','prepreg_hypertension','gestational_hypertension','hypertension_eclampsia',
           'infertility_treatment','fertility_enhancing_drugs',
@@ -45,4 +50,13 @@ import pandas as pd
 ## DataLoad and Global Filtering
 
 ### read in the 2009 survey data from CSV 
-prenatal_df  = pd.read_fwf('Nat2017PublicUS.c20180516.r20180808.txt', colspecs=colspecs, names=colnames, header=None, converters={col:str for col in colnames})
+prenatal_df  = pd.read_fwf('Nat2017PublicUS.c20180516.r20180808.txt', colspecs=colspecs, names=colnames, index_col=False, header=None, converters={col:str for col in colnames})
+
+colors = (0,0,0)
+area = np.pi*3
+fig = plt.figure()
+ax = plt.subplot(111)
+ax.scatter(prenatal_df['birth_weight_recode12'],prenatal_df['weight_gain_recode'],s=area,c=colors,alpha=0.5)
+plt.title('XXXXXX')
+ax.legend()
+fig.show()
