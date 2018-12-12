@@ -1,6 +1,3 @@
-Author: James Imgrund
-Course: DATS6401
-
 Topic: Analysis of CDC Neonatal data for 2017
 
 
