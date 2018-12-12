@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Prenatal Analysis</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- D3 tip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/maternal.css">
+</head>
+
+<body>
+      <div id="header">
+         <div id="logo">
+            <div id="logo_text">
+            <h1>Analysis of Maternal Health</br> on the Newborn</h1>
+            </div> <!-- logo_text -->
+         </div><!-- logo -->
+         <div id="menubar">
+            <ul id="menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="Socioeconomic.html">Socioeconomic</a></li>
+               <li><a href="GeneralHealth.html">General Health</a></li>
+               <li class="selected"><a href="MaternalCare.html">Maternal Care</a></li>
+            </ul><!-- menu -->
+         </div><!-- menubar -->
+      </div><!-- header -->
+
+    </p>&nbsp;</p>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+                  <h3>Weight Gain</h3>
+                  Many parents fear that too much weight gain during pregnancy is a bad thing.  Some feel it is weight they will have to try and lose after the pregnancy, others feel it will lead to a heavier baby and a challenging delivery.  With an analysis of the CDC data, we can look to see if there is any coorrelation between the weight gain during pregnancy and larger babies.
+               </div>
+            </div>
+        </div>
+        </p>
+        <div class="row">
+            <div class="col-md-3">
+               </p>&nbsp;</p>
+               Sex of Infant: <select class="form-control genderSelect-weight">
+                  <option value="all" selected>All Babies</option>
+                  <option value="boys">Baby Boys</option>
+                  <option value="girls">Baby Girls</option>
+               </select>
+               </br>
+               Mothers Age: <select class="form-control ageSelect-weight">
+                  <option value="0" selected>All Ages</option>
+                  <option value="1">< 15 years</option>
+                  <option value="2">15-19 years</option>
+                  <option value="3">20-24 years</option>
+                  <option value="4">25-29 years</option>
+                  <option value="5">30-34 years</option>
+                  <option value="6">35-39 years</option>
+                  <option value="7">40-44 years</option>
+                  <option value="8">45-49 years</option>
+                  <option value="9">50-54 years</option>
+               </select>
+            </div>
+            <div class="col-md-9" id="weight-scatter-plot-area" class="center-block"></div>  
+        </div>
+        </p>&nbsp;</p>
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+                  <h3>BMI</h3>
+                  There is a perception that the size of the mother translates to the size of her newborn.  The CDC data includes BMI information for the mother which we can compare to the weight of the newborn.  BMI is a good measurement as it takes into consideration both the height and weight of the person.  Sadly, the CDC data does not include the length of the newborn so the closest attribute we can compare against is weight of the newborn.
+               </div>
+            </div>
+        </div>
+        </p>
+        <div class="row">
+            <div class="col-md-3">
+               </p>&nbsp;</p>
+               Sex of Infant: <select class="form-control genderSelect-bmi">
+                  <option value="all" selected>All Babies</option>
+                  <option value="boys">Baby Boys</option>
+                  <option value="girls">Baby Girls</option>
+               </select>
+               </br>
+               Mothers Age: <select class="form-control ageSelect-bmi">
+                  <option value="0" selected>All Ages</option>
+                  <option value="1">< 15 years</option>
+                  <option value="2">15-19 years</option>
+                  <option value="3">20-24 years</option>
+                  <option value="4">25-29 years</option>
+                  <option value="5">30-34 years</option>
+                  <option value="6">35-39 years</option>
+                  <option value="7">40-44 years</option>
+                  <option value="8">45-49 years</option>
+                  <option value="9">50-54 years</option>
+               </select>
+            </div>
+            <div class="col-md-9" id="bmi-scatter-plot-area" class="center-block"></div>
+        </div>
+        </p>&nbsp;</p>
+        <div class="row" id="weight-gest-diab">
+            <div class="col-md-3">
+               </p>&nbsp;</p>
+               <select class="form-control genderSelect-birthweight-gest-diab">
+                  <option value="all" selected>All Babies</option>
+                  <option value="boys">Baby Boys</option>
+                  <option value="girls">Baby Girls</option>
+               </select>
+            </div>
+            <div class="col-md-9" id="weight-gest-diab-area" class="center-block"></div> 
+        </div>
+    </div> <!-- close of container -->
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

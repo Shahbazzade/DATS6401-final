@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Prenatal Analysis</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- D3 tip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/maternal.css">
+</head>
+
+<body>
+      <div id="header">
+         <div id="logo">
+            <div id="logo_text">
+            <h1>Analysis of Maternal Health</br> on the Newborn</h1>
+            </div> <!-- logo_text -->
+         </div><!-- logo -->
+         <div id="menubar">
+            <ul id="menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="Socioeconomic.html">Socioeconomic</a></li>
+               <li class="selected"><a href="GeneralHealth.html">General Health</a></li>
+               <li><a href="MaternalCare.html">Maternal Care</a></li>
+            </ul><!-- menu -->
+         </div><!-- menubar -->
+      </div><!-- header -->
+
+    </p>&nbsp;</p>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+                  <h3>Cigarette Smoking</h3>
+                  It is often stated that smoking while pregnant can be harmful to the infant.  Using the CDC data, we can look at a comparison to see whether there is any coorrelation between the number of cigarettes smoked and the APGAR score that was assigned to the infant at birth.  The choice of performing this analysis against the APGAR score is due to APGAR measuring the healthy development of a baby.  Remember, APGAR measures Appearance, Pulse, Grimace, Activity, and Respiration.
+               </div>
+            </div>
+        </div>
+        </p>
+        <div class="row" id="cigs-first-apgar">
+            <div class="col-md-3">
+               </p>&nbsp;</p>
+               Sex of Infant: <select class="form-control genderSelect-cigs-first-apgar">
+                  <option value="all" selected>All Babies</option>
+                  <option value="boys">Baby Boys</option>
+                  <option value="girls">Baby Girls</option>
+               </select>
+               </br>
+               Mothers Age: <select class="form-control ageSelect-apgar-cigs">
+                  <option value="0" selected>All Ages</option>
+                  <option value="1">< 15 years</option>
+                  <option value="2">15-19 years</option>
+                  <option value="3">20-24 years</option>
+                  <option value="4">25-29 years</option>
+                  <option value="5">30-34 years</option>
+                  <option value="6">35-39 years</option>
+                  <option value="7">40-44 years</option>
+                  <option value="8">45-49 years</option>
+                  <option value="9">50-54 years</option>
+               </select>
+               </br>
+               Cigarettes Smoked During: <select class="form-control smokeSelect-cigs-first-apgar">
+                  <option value="prior" selected>Prior to Pregnancy</option>
+                  <option value="first">First Trimester</option>
+                  <option value="second">Second Trimester</option>
+                  <option value="third">Third Trimester</option>
+               </select>
+               </br>
+               Include Non-smokers: <select class="form-control nonSmokerSelect-cigs-apgar">
+                  <option value="yes" selected>Yes</option>
+                  <option value="no">No</option>
+               </select>
+            </div>
+            <div class="col-md-9" id="apgar-cigs-area" class="center-block"></div>  
+        </div>
+    </div> <!-- close of container -->
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

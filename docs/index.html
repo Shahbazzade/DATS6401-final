@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Prenatal Analysis</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- D3 tip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/maternal.css">
+</head>
+
+<body>
+      <div id="header">
+         <div id="logo">
+            <div id="logo_text">
+            <h1>Analysis of Maternal Health</br> on the Newborn</h1>
+            </div> <!-- logo_text -->
+         </div><!-- logo -->
+         <div id="menubar">
+            <ul id="menu">
+               <li class="selected"><a href="index.html">Home</a></li>
+               <li><a href="Socioeconomic.html">Socioeconomic</a></li>
+               <li><a href="GeneralHealth.html">General Health</a></li>
+               <li><a href="MaternalCare.html">Maternal Care</a></li>
+            </ul><!-- menu -->
+         </div><!-- menubar -->
+      </div><!-- header -->
+
+    </p>&nbsp;</p>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+                  <h3>Introduction</h3>
+                  The CDC provides vital statistics datasets for births within the United States.  This data can be found at <a href="https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm">https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm</a>.  The following analysis will be reviewing the 2017 data.  Within this analysis we will be looking for relations between attributes recorded about the mother and the newborn.  Are there details within the dataset that show actions which the mother can take that may impact the newborn?
+               </div>
+            </div>
+        </div>
+        </p>
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+                  <h3>High-level View of the Data</h3>
+                  Before going into the analysis, let us take a glance at some of the high level metrics of this dataset.<br>
+First, let us look at how many births occurred within 2017:
+
+
+               </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9" id="pie-chart-area" class="center-block"></div>  
+        </div>
+        </p>
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+
+               </p>&nbsp;</p>
+Next, we can see the distribution of the weight of these babies at birth.
+               </p>&nbsp;</p>
+
+               </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+               </p>&nbsp;</p>
+               </p>&nbsp;</p>
+               <select class="form-control genderSelect" >
+                  <option value="all" selected>All Babies</option>
+                  <option value="boys">Baby Boys</option>
+                  <option value="girls">Baby Girls</option>
+               </select>
+            </div>
+            <div class="col-md-9" id="chart-area" class="center-block"></div>  
+        </div>
+        </p>
+        <div class="row">
+            <div class="col-md-12">
+               <div id="content">
+
+               </p>&nbsp;</p>
+Finally, we see the distribution of the mother's age for each of the babies at birth.
+               </p>&nbsp;</p>
+
+               </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+               </p>&nbsp;</p>
+               </p>&nbsp;</p>
+               <select class="form-control genderSelect-age" >
+                  <option value="all" selected>All Babies</option>
+                  <option value="boys">Baby Boys</option>
+                  <option value="girls">Baby Girls</option>
+               </select>
+            </div>
+            <div class="col-md-9" id="mothers-age-area" class="center-block"></div>  
+        </div>
+    </div> <!-- close of container -->
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
